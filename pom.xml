@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>padroes-projetos</artifactId>
+    <artifactId>spring-rest-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>padroes-projetos</name>
-    <description>padroes-projetos</description>
+    <name>spring-rest-api</name>
+    <description>spring-rest-api</description>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2021.0.4</spring-cloud.version>
@@ -41,12 +41,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
         <dependency>
