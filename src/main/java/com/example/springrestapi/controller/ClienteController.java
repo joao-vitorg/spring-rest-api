@@ -1,18 +1,18 @@
-package com.example.padroesprojetos.controller;
+package com.example.springrestapi.controller;
 
-import com.example.padroesprojetos.handler.ResponseError;
-import com.example.padroesprojetos.model.cliente.Cliente;
-import com.example.padroesprojetos.model.cliente.ClienteDto;
-import com.example.padroesprojetos.service.ClienteService;
+import com.example.springrestapi.handler.ResponseError;
+import com.example.springrestapi.model.Cliente;
+import com.example.springrestapi.model.dto.ClienteDto;
+import com.example.springrestapi.service.ClienteService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("cliente")
-public class ClienteRestController {
+public class ClienteController {
     private final ClienteService clienteService;
 
-    public ClienteRestController(ClienteService clienteService) {
+    public ClienteController(ClienteService clienteService) {
         this.clienteService = clienteService;
     }
 

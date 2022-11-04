@@ -1,6 +1,6 @@
-package com.example.padroesprojetos.service;
+package com.example.springrestapi.service;
 
-import com.example.padroesprojetos.model.endereco.Endereco;
+import com.example.springrestapi.model.Endereco;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

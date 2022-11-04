@@ -1,4 +1,4 @@
-package com.example.padroesprojetos.model.endereco;
+package com.example.springrestapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,11 +8,11 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Getter
-@Setter
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Getter
+@Setter
 public class Endereco {
 	@Id
 	private String cep;

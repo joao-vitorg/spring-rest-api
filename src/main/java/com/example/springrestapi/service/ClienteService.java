@@ -1,7 +1,7 @@
-package com.example.padroesprojetos.service;
+package com.example.springrestapi.service;
 
-import com.example.padroesprojetos.model.cliente.Cliente;
-import com.example.padroesprojetos.model.cliente.ClienteDto;
+import com.example.springrestapi.model.Cliente;
+import com.example.springrestapi.model.dto.ClienteDto;
 
 public interface ClienteService {
 	Iterable<Cliente> findAll();

@@ -1,6 +1,5 @@
-package com.example.padroesprojetos.model.cliente;
+package com.example.springrestapi.model;
 
-import com.example.padroesprojetos.model.endereco.Endereco;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,11 +8,11 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Objects;
 
-@Getter
-@Setter
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
+@Getter
+@Setter
 public class Cliente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

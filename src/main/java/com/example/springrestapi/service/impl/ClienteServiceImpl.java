@@ -1,13 +1,13 @@
-package com.example.padroesprojetos.service.impl;
+package com.example.springrestapi.service.impl;
 
-import com.example.padroesprojetos.handler.ClienteInexistenteError;
-import com.example.padroesprojetos.model.cliente.ClientRepository;
-import com.example.padroesprojetos.model.cliente.Cliente;
-import com.example.padroesprojetos.model.cliente.ClienteDto;
-import com.example.padroesprojetos.model.endereco.Endereco;
-import com.example.padroesprojetos.model.endereco.EnderecoRepository;
-import com.example.padroesprojetos.service.ClienteService;
-import com.example.padroesprojetos.service.ViaCepService;
+import com.example.springrestapi.handler.ClienteInexistenteError;
+import com.example.springrestapi.model.Cliente;
+import com.example.springrestapi.model.Endereco;
+import com.example.springrestapi.model.dto.ClienteDto;
+import com.example.springrestapi.repository.ClientRepository;
+import com.example.springrestapi.repository.EnderecoRepository;
+import com.example.springrestapi.service.ClienteService;
+import com.example.springrestapi.service.ViaCepService;
 import org.springframework.stereotype.Service;
 
 @Service

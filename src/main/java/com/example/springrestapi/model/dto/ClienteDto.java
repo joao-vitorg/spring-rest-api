@@ -1,4 +1,6 @@
-package com.example.padroesprojetos.model.cliente;
+package com.example.springrestapi.model.dto;
+
+import com.example.springrestapi.model.Cliente;
 
 import java.io.Serializable;
 
