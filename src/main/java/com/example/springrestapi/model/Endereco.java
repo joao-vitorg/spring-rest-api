@@ -15,11 +15,15 @@ import javax.persistence.Id;
 @Setter
 public class Endereco {
 	@Id
-	private String cep;
+	private Integer cep;
 	private String logradouro;
 	private String complemento;
 	private String bairro;
 	private String localidade;
 	private String uf;
-	private String ddd;
+	private Integer ddd;
+
+	public void setCep(String cep) {
+		this.cep = Integer.parseInt(cep.replace("-", ""));
+	}
 }

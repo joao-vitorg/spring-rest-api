@@ -10,6 +10,8 @@ import com.example.springrestapi.service.ClienteService;
 import com.example.springrestapi.service.ViaCepService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ClienteServiceImpl implements ClienteService {
     private final ClientRepository clientRepository;
@@ -22,7 +24,7 @@ public class ClienteServiceImpl implements ClienteService {
         this.viaCepService = viaCepService;
     }
 
-    private Endereco findEnderecoByCep(String cep) {
+    private Endereco findEnderecoByCep(int cep) {
         try {
             return enderecoRepository.findById(cep).orElseGet(() -> {
                 Endereco novoEndereco = viaCepService.consultarCep(cep);
@@ -40,7 +42,7 @@ public class ClienteServiceImpl implements ClienteService {
     }
 
     @Override
-    public Iterable<Cliente> findAll() {
+    public List<Cliente> findAll() {
         return clientRepository.findAll();
     }
 

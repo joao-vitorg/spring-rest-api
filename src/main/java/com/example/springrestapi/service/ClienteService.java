@@ -3,8 +3,10 @@ package com.example.springrestapi.service;
 import com.example.springrestapi.model.Cliente;
 import com.example.springrestapi.model.dto.ClienteDto;
 
+import java.util.List;
+
 public interface ClienteService {
-	Iterable<Cliente> findAll();
+	List<Cliente> findAll();
 
 	Cliente findById(Long id);
 
